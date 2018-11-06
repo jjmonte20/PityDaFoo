@@ -1,8 +1,33 @@
 body{
-	
+	font-family: Georgia;
+	font-size: 16px;
+}
+div{
+	background-color: rgb(231, 231, 231);
+	//border: 1px solid rgb(101, 151, 251);
+	border-radius: 15px;
+	margin-top: 10px;
 }
 table{
 	
+}
+th{
+	font-weight: bold;
+}
+tr{
+	width: 100%;
+}
+td{
+	width: 16.777777%
+}
+input{
+	width: 200px;
+}
+button{
+	border-radius: 4px;
+	margin-top: 10px;
+	padding: 7px;
+	width: 100px;
 }
 
 .headingContainer{
@@ -15,16 +40,16 @@ table{
 	margin-bottom: 15px;
 }
 .mainContainer{
-	background-color: rgb(241, 241, 241);
+	border: none;
+	background-color: rgb(255, 255, 255);
 	width: 85%;
 	margin: auto;
 }
 .tableContainer{
 	padding: 10px;
-	 border-left: 6px solid rgb(31, 21, 41);
 }
 .table{
-	
+	width: 100%;
 }
 .addFieldContainer{
 	padding: 10px;
