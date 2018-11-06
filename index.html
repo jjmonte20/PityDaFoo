@@ -9,7 +9,15 @@
 	
 	<meta charset="UTF-8"/>
 	<!-- firebase handler, to be placed in before other js scripts -->
-	<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    
+    <!-- jquery cdn -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
 	<title>Pity Foo Projekt</title>
 </head>
 
@@ -44,14 +52,14 @@
 			<p class="basicHeading">Add an employee to the payroll</p>
 			<hr/>
 			<p class="basicHeading">Employee name:</p>
-			<input id="employeeNameInput" type="text"></input>
+			<input id="employeeNameInput" type="text">
 			<p class="basicHeading">Employee role:</p>
-			<input id="employeeRoleInput" type="text"></input>
+			<input id="employeeRoleInput" type="text">
 			<p class="basicHeading">Employee start date:</p>
-			<input id="employeeStartDateInput" type="date"></input>
+			<input id="employeeStartDateInput" type="date">
 			<p class="basicHeading">Employee monthly rate: </p>
-			<input id="employeeMonthlyRateInput" min="7.25" value="7.25" type="number"></input>
-			<br/>
+			<input id="employeeMonthlyRateInput" min="7.25" value="7.25" type="number">
+      <br/>
 			<button id="submitButton">Submit</button>
 		</div>
 	</div>
