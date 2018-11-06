@@ -1,0 +1,29 @@
+.headingContainer{
+	width: 100%;
+	font-size: 26px;
+	background-color: rgb(31, 21, 41);
+	color: rgb(240, 245, 245);
+	padding: 15px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.mainContainer{
+	background-color: rgb(241, 241, 241);
+	width: 85%;
+	margin: auto;
+}
+.tableContainer{
+	padding: 10px;
+	 border-left: 6px solid rgb(31, 21, 41);
+}
+.table{
+	
+}
+.addFieldContainer{
+	padding: 10px;
+}
+.basicHeading{
+	font-size: 18px;
+	padding: 5px;
+	padding-left: 0px;
+}

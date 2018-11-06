@@ -2,6 +2,11 @@
 <html lang="en-us">
 	
 <head>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/mainStyle.css" rel="stylesheet">
+	<link id="favicon" rel="icon" href="images/favicon.png" type="image/png" sizes="8x8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<meta charset="UTF-8"/>
 	<!-- firebase handler, to be placed in before other js scripts -->
 	<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
@@ -11,6 +16,7 @@
 <body>
 	
 	<header class="headingContainer">
+		<p>Pitty Foo Projekt Employee Page</p>
 	</header>
 	
 	<div class="mainContainer">
@@ -25,27 +31,33 @@
 					<td>Total Billed($)</td>
 				</th>
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>Jimmy John</td>
+					<td>Professional bread cutter</td>
+					<td>09/11/1998</td>
+					<td>242</td>
+					<td>7.25</td>
+					<td>22000</td>
 				</tr>
 			</table>
 		</div>
 		<div class="addFieldContainer">
-			<p>Employee name:</p>
-			<input id="employeeName" type="text"></input>
-			<p>Employee role:</p>
-			<input id="employeeRole" type="text"></input>
-			<p>Employee start date:</p>
-			<input id="employeeStartDate" type="date"></input>
-			<p>Employee monthly rate: </p>
-			<input id="employeeMonthlyRate" min="7.25" type="number">7.25</input>
+			<p class="basicHeading">Add an employee to the payroll</p>
+			<hr/>
+			<p class="basicHeading">Employee name:</p>
+			<input id="employeeNameInput" type="text"></input>
+			<p class="basicHeading">Employee role:</p>
+			<input id="employeeRoleInput" type="text"></input>
+			<p class="basicHeading">Employee start date:</p>
+			<input id="employeeStartDateInput" type="date"></input>
+			<p class="basicHeading">Employee monthly rate: </p>
+			<input id="employeeMonthlyRateInput" min="7.25" value="7.25" type="number"></input>
+			<br/>
 			<button id="submitButton">Submit</button>
 		</div>
 	</div>
+	
+	<script src="js/requestHandler.js"></script>
+	<script src="js/displayHandler.js"></script>
 	
 </body>
 
