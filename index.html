@@ -1,11 +1,69 @@
-
-
-
-<!-- firebase handler, to be placed in before other js scripts -->
-<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
-
-<!-- jquery cdn -->
-<script
+<!DOCTYPE html>
+<html lang="en-us">
+	
+<head>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/mainStyle.css" rel="stylesheet">
+	<link id="favicon" rel="icon" href="images/favicon.png" type="image/png" sizes="8x8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta charset="UTF-8"/>
+	<!-- firebase handler, to be placed in before other js scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    
+    <!-- jquery cdn -->
+    <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+	<title>Pity Foo Projekt</title>
+</head>
+
+<body>
+	
+	<header class="headingContainer">
+		<p>Pitty Foo Projekt Employee Page</p>
+	</header>
+	
+	<div class="mainContainer">
+		<div class="tableContainer">
+			<table id="table">
+				<th>
+					<td>Employee Name</td>
+					<td>Role</td>
+					<td>Start Date</td>
+					<td>Months Worked</td>
+					<td>Monthly Rate($)</td>
+					<td>Total Billed($)</td>
+				</th>
+				<tr>
+					<td>Jimmy John</td>
+					<td>Professional bread cutter</td>
+					<td>09/11/1998</td>
+					<td>242</td>
+					<td>7.25</td>
+					<td>22000</td>
+				</tr>
+			</table>
+		</div>
+		<div class="addFieldContainer">
+			<p class="basicHeading">Add an employee to the payroll</p>
+			<hr/>
+			<p class="basicHeading">Employee name:</p>
+			<input id="employeeNameInput" type="text">
+			<p class="basicHeading">Employee role:</p>
+			<input id="employeeRoleInput" type="text">
+			<p class="basicHeading">Employee start date:</p>
+			<input id="employeeStartDateInput" type="date">
+			<p class="basicHeading">Employee monthly rate: </p>
+			<input id="employeeMonthlyRateInput" min="7.25" value="7.25" type="number">
+			<button id="submitButton">Submit</button>
+		</div>
+	</div>
+	
+	<script src="requesthandler.js"></script>
+	<script src="js/displayHandler.js"></script>
+	
+</body>
+
+</html>
