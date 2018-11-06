@@ -1,3 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	
+<head>
+	<meta charset="UTF-8"/>
+	<!-- firebase handler, to be placed in before other js scripts -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+	<title>Pity Foo Projekt</title>
+</head>
 
-<!-- firebase handler, to be placed in before other js scripts -->
-<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<body>
+	
+	<header class="headingContainer">
+	</header>
+	
+	<div class="mainContainer">
+		<div class="tableContainer">
+			<table id="table">
+				<th>
+					<td>Employee Name</td>
+					<td>Role</td>
+					<td>Start Date</td>
+					<td>Months Worked</td>
+					<td>Monthly Rate($)</td>
+					<td>Total Billed($)</td>
+				</th>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="addFieldContainer">
+			<p>Employee name:</p>
+			<input id="employeeName" type="text"></input>
+			<p>Employee role:</p>
+			<input id="employeeRole" type="text"></input>
+			<p>Employee start date:</p>
+			<input id="employeeStartDate" type="date"></input>
+			<p>Employee monthly rate: </p>
+			<input id="employeeMonthlyRate" min="7.25" type="number">7.25</input>
+			<button id="submitButton">Submit</button>
+		</div>
+	</div>
+	
+</body>
+
+</html>
