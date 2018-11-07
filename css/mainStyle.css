@@ -9,16 +9,16 @@ div{
 	margin-top: 10px;
 }
 table{
-	
+	width: 100%;
 }
 th{
 	font-weight: bold;
 }
 tr{
-	width: 100%;
+	
 }
 td{
-	width: 16.777777%
+	
 }
 input{
 	width: 200px;
