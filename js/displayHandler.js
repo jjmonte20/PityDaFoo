@@ -1,11 +1,4 @@
 
-var name = "";
-var start = new Date(2018, 7, 5);
-var role = "";
-var mRate = 0;
-var tBill = 0;
-var mWork = 0;
-
 $(document).ready(function () {
 
     function newEntry(name, start, role, mRate) {
